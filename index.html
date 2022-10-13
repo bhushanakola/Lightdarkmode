@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function changeMode(){
+            let mybody = document.body;
+            mybody.classList.toggle('mydark')
+        }
+    </script>
 </head>
 
 <body>
     <header id="logo">
+        <button onclick="changeMode()">Change Mode</button>
         <img src="img/gb.png" alt="">
         <h1> Wel-Come to GB Servics Desk</h1>
     </header>

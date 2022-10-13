@@ -11,8 +11,14 @@
 body {
   background-color: #F4F6F6;
   width: 100%;
+  color: black;
 
 }
+.mydark{
+  background-color: black;
+  color: white;
+}
+
 
 header {
   height: 150px;
