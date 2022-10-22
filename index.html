@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GB Service Desk</title>
     <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
 </head>
 
 <body>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/19d7575d71/maharashtra/" data-label_1="MAHARASHTRA"
+        data-label_2="WEATHER" data-theme="original">MAHARASHTRA WEATHER</a>
+    <button onclick="changeMode()" class="btn-light">Mode</button>
     <header id="logo">
         <img src="img/gb.png" alt="">
-        <h1> Wel-Come to GB Servics Desk</h1>
+        <h1> Wel-Come to GB Services Desk</h1>
     </header>
+
     <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -59,45 +64,54 @@
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-
-    <div id="quicksearch">
-        <SPAN id="Searheading">Services</SPAN>
-        <div class="cover">
-            <div class="box">
-                <img class="boximg" src="serviceimg/1.jpg" alt="">
+    
+    <div id="serviceheading">
+        Services
+    </div>
+    <section class="container">
+        <div class="card">
+            <div class="card-img">
+                <img src="serviceimg/1.jpg" alt="">
+            </div>
                 <p>Why go searching for your bank when you have Payworld Retail touchpoint next door for all your
                     banking needs? Aadhaar Enabled Payment Service (AEPS), uses Aadhaar Data and Biometric
                     authentication
                     instead of signature or debit card information of the customers and allows them to quickly Withdraw,
                     Deposit and Transfer cash & also access bank statements without visiting their bank branch.</p>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img  src="serviceimg/2.jpg" alt="">
             </div>
-            <div class="box">
-                <img class="boximg" src="serviceimg/2.jpg" alt="">
                 <p>Computer repair is the process of identifying, troubleshooting and resolving problems and issues
                     in a faulty computer. Computer repair is a broad field encompassing many tools, techniques and
                     procedures used to repair computer hardware, software or network/Internet problems. Computer repair
                     is also
                     known as PC repair.</p>
             </div>
-            <div class="box">
-                <img class="boximg" src="serviceimg/3.jpg" alt="">
+            <div class="card">
+                <div class="card-img">
+                    <img src="serviceimg/3.jpg" alt="">
+                </div>
                 <p>Digital marketing services provide businesses of all sizes with an opportunity to market their
                     brand 24/7 at a low cost. From startups to medium-sized enterprises to multiple-location companies,
                     a
                     digital marketing company helps you expand your niche market reach to offer goods and services to
                     your
                     target customers, irrespective of time differences or location.</p>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img  src="serviceimg/4.png" alt="">
             </div>
-            <div class="box">
-                <img class="boximg" src="serviceimg/4.png" alt="">
                 <p>Business services is a general term that describes work that supports a business but does not
                     produce a tangible commodity. Information technology (IT) is an important business service that
                     supports
                     many other business services such as procurement, shipping and finance.
                 </p>
-            </div>
         </div>
-    </div>
+        
+    </section>
 
     <div id="contact-in">
         <div class="contact-map">
@@ -145,6 +159,9 @@
         <P>Email:gbservicedesks@gmail.com l Mobile No: +91 7378444473</P>
 
     </footer>
+
+    <!-- slider script -->
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
@@ -168,6 +185,11 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
+    </script>
+    <!-- weather script -->
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+
     </script>
 
 </body>
